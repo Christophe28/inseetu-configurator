@@ -2,10 +2,12 @@
   "name": "inseetu-configurator",
   "source": "index.html",
   "version": "1.0.0",
+  "homepage": "https://christophe28.github.io/inseetu-configurator",
   "description": "",
-  "main": "index.js",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
+    "predeploy": "npm run build -- --public-url .",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel",
     "build": "parcel build"
@@ -20,11 +22,11 @@
   "bugs": {
     "url": "https://github.com/inseetuweb/inseetu-configurator/issues"
   },
-  "homepage": "https://github.com/inseetuweb/inseetu-configurator#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.3.2",
     "gh-pages": "^3.2.3",
-    "parcel": "^2.3.2"
+    "parcel": "^2.3.2",
+    "process": "^0.11.10"
   },
   "dependencies": {
     "react": "^17.0.2",

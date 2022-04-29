@@ -14,7 +14,7 @@ import Input from '../components/wizzardComponents/buttons/input';
 const Wizzard = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [town, setTown] = useState("");
-
+    
     const components = [
         <ChooseTown 
             setTown={setTown}
